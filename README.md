@@ -23,7 +23,6 @@
 ### Troubleshooting
 If the conda environment fails to install from the yml file, create it manually with the following:
 
-    ```
     conda create -y -n imagequant101 -c conda-forge python=3.9
     pip install jupyter
     pip install imageio
@@ -33,7 +32,6 @@ If the conda environment fails to install from the yml file, create it manually 
     pip install pandas
     pip install seaborn
     pip install pyefd
-    ```
 
 ### To cite
 If you use the exercise notebooks from this tutorial, please acknowledge it as follows:
