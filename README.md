@@ -21,7 +21,7 @@
 5. Answer sheets can be found on the `solutions` folder. To run them, simply move the [Solution] notebook you would like to run to the base `imagequantification101` repository.
 
 ### Troubleshooting
-If the imagequant101_env.yml fails to install for whichever reason, try to create it manually with the following:
+If the `imagequant101_env.yml` fails to install for whichever reason, try to create it manually with the following:
 
     conda create -y -n imagequant101 -c conda-forge python=3.9
     source activate imagequant101
