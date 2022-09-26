@@ -24,6 +24,7 @@
 If the conda environment fails to install from the yml file, create it manually with the following:
 
     conda create -y -n imagequant101 -c conda-forge python=3.9
+    source activate imagequant101
     pip install jupyter
     pip install imageio
     pip install scikit-image
