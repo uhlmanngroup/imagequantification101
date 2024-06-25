@@ -25,3 +25,13 @@ napari-crop = "*"
 napari-skimage = "*"
 napari-skimage-regionprops = "*"
 pyefd = "*"
+
+
+[feature.nbdev.dependencies]
+nbdev = ">=2.2.10,<2.3"
+
+[feature.nbdev.tasks]
+clean = "nbdev_clean --clear_all"
+
+[environments]
+nbdev = {features=["nbdev"], no-default-feature = true}
