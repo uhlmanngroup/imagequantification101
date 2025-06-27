@@ -1,19 +1,17 @@
-name: zidas2024
+name: zidas2025
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - matplotlib>=3.8.4,<3.9
-  - scikit-image>=0.23.2,<0.24
-  - seaborn>=0.13.2,<0.14
-  - numpy>=1.26.4,<1.27
-  - napari>=0.4.19,<0.4.20
-  - pyqt>=5.15.9,<5.16
-  - jupyter>=1.0.0,<1.1
-  - scikit-learn>=1.5.0,<1.6
+  - python=3.12
+  - matplotlib
+  - scikit-image
+  - seaborn
+  - numpy
+  - napari>=0.5.4
+  - pyqt
+  - jupyterlab
+  - scikit-learn
   - pip
   - pip:
-      - napari-crop
       - napari-skimage
-      - napari-skimage-regionprops
       - pyefd
