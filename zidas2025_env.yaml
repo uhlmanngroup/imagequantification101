@@ -1,0 +1,17 @@
+name: zidas2025
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - matplotlib
+  - scikit-image
+  - seaborn
+  - numpy
+  - napari>=0.5.4
+  - pyqt
+  - jupyterlab
+  - scikit-learn
+  - pip
+  - pip:
+      - napari-skimage
+      - pyefd
