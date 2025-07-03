@@ -97,6 +97,8 @@ or
 python3 -m jupyterlab
 ```
 
+This will start the jupyter server and open a tab in your internet browser that will allow you to interact with the notebooks.
+
 ## To cite
 If you use the exercise notebooks from this tutorial, please acknowledge it as follows:
 
