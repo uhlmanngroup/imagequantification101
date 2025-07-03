@@ -88,6 +88,15 @@ napari
 
 This should open the napari viewer after a little bit of waiting time. 
 
+To start working with the notebooks, either run:
+```
+jupyterlab
+```
+or
+```
+python3 -m jupyterlab
+```
+
 ## To cite
 If you use the exercise notebooks from this tutorial, please acknowledge it as follows:
 
