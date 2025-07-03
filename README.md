@@ -53,7 +53,7 @@ commands:
 ```
 
 ### Create ZIDAS2025 Environment
-Downlaod this GitHub repository:
+Download this GitHub repository:
 ![download_zip](./git-download-zip.png)
 1. Make sure that you have the zidas-2025 branch selected.
 2. Click on the green `Code` button.
