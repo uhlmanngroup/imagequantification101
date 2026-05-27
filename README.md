@@ -102,7 +102,7 @@ This will start the jupyter server and open a tab in your internet browser that 
 ## To cite
 If you use the exercise notebooks from this tutorial, please acknowledge it as follows:
 
-Buchholz, T.-O., Witz, G., Uhlmann, V. (2025). Image Quantification 101 Tutorial. github.com/uhlmanngroup/imagequantification101
+Uhlmann, V., Albert, M., Buchholz, T.-O., Fuster-Barceló, C., and Witz, G.  (2026). Image Quantification 101 Tutorial. github.com/uhlmanngroup/imagequantification101
 
 ## Further resources
 * Miura, K. & Sladoje, N. (2020). Bioimage Data Analysis Workflows. doi.org/10.1007/978-3-030-22386-1
