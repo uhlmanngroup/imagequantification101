@@ -2,7 +2,7 @@
 
 ## Python Setup
 
-To ensure a smooth start into the Python session at ZIDAS 2025 we require you to prepare a conda environment. A conda environment is a special directory which contains all required dependencies to run Python and follow the planned Python session. Luckily you don't have to create this environment by hand. We will use the conda package manager to build the environment. If you have anaconda or miniforge already installed on your computer you can skip the first part and directly move on to the environment creation. Otherwise follow the miniforge install instructions first.
+To ensure a smooth start into the Python session at ZIDAS 2026 we require you to prepare a conda environment. A conda environment is a special directory which contains all required dependencies to run Python and follow the planned Python session. Luckily you don't have to create this environment by hand. We will use the conda package manager to build the environment. If you have anaconda or miniforge already installed on your computer you can skip the first part and directly move on to the environment creation. Otherwise follow the miniforge install instructions first.
 
 ### Install miniforge
 Miniforge is our recommended environment manager for Python environments. Please download the version which fits your operation system from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#download) and follow the respective install instructions:
@@ -52,23 +52,23 @@ commands:
 
 ```
 
-### Create ZIDAS2025 Environment
+### Create ZIDAS2026 Environment
 Download this GitHub repository:
 ![download_zip](./git-download-zip.png)
-1. Make sure that you have the zidas-2025 branch selected.
+1. Make sure that you have the zidas-2026 branch selected.
 2. Click on the green `Code` button.
 3. Click on `Download ZIP`.
 4. Unpack the downloaded ZIP file.
 
-From inside your open terminal or Minifroge Prompt change into the unpacked directory. If you extracted the setup material in your `Downloads` directory you would now change to `Downloads/imagequantification101-zidas-2025`.
+From inside your open terminal or Minifroge Prompt change into the unpacked directory. If you extracted the setup material in your `Downloads` directory you would now change to `Downloads/imagequantification101-zidas-2026`.
 
-__Windows:__ `cd Downloads\imagequantification101-zidas-2025`
+__Windows:__ `cd Downloads\imagequantification101-zidas-2026`
 
-__MacOS/Linux:__ `cd Downloads/imagequantification101-zidas-2025`
+__MacOS/Linux:__ `cd Downloads/imagequantification101-zidas-2026`
 
-Now we can create the environment with conda from the `zidas2025_env.yaml` file. Run the following command:
+Now we can create the environment with conda from the `zidas2026_env.yaml` file. Run the following command:
 ```commandline
-conda env create -f zidas2025_env.yaml
+conda env create -f zidas2026_env.yaml
 ```
 
 Executing this command might take some time, but once it finishes you should see the following:
@@ -82,7 +82,7 @@ Executing transaction: done
 
 To verify that everything worked run the following two commands:
 ```
-conda activate zidas2025
+conda activate zidas2026
 napari
 ```
 
