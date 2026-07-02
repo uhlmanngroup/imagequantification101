@@ -3,7 +3,6 @@ name: Deploy JupyterLite
 on:
   push:
     branches:
-      - main
       - zidas-2026
   workflow_dispatch:
 
