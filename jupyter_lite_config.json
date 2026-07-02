@@ -1,0 +1,23 @@
+{
+  "LiteBuildConfig": {
+    "contents": [
+      "."
+    ],
+    "extra_ignore_contents": [
+      "/0 - napari\\.ipynb$",
+      "/dist/",
+      "/README\\.md$",
+      "/LICENSE$",
+      "/git-download-zip\\.png$",
+      "/imagequant101_env\\.yml$",
+      "/zidas2026_env\\.yaml$",
+      "/jupyterlite-environment\\.yml$",
+      "/jupyter_lite_config\\.json$",
+      "/requirements-jupyterlite\\.txt$"
+    ],
+    "output_dir": "dist"
+  },
+  "XeusAddon": {
+    "environment_file": "jupyterlite-environment.yml"
+  }
+}
