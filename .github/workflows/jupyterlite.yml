@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - zidas-2026
+  pull_request:
+    branches:
+      - zidas-2026
   workflow_dispatch:
 
 permissions:
@@ -51,6 +54,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
