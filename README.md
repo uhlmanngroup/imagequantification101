@@ -103,7 +103,7 @@ This will start the jupyter server and open a tab in your internet browser that 
 
 Alternatively, the tutorial notebooks can be run directly in your browser with JupyterLite, without installing Python locally:
 
-https://uhlmanngroup.github.io/imagequantification101/
+[![Launch JupyterLite](https://img.shields.io/badge/launch-JupyterLite-F37626?logo=jupyter&logoColor=white)](https://uhlmanngroup.github.io/imagequantification101/)
 
 This excludes the need to install Python and all dependencies, but it is limited in terms of performance and functionality. For example, you cannot use napari in JupyterLite, therefore the napari notebook is not available in this version. JupyterLite also cannot read TIFF files that require `imagecodecs`, such as compressed TIFFs; the provided tutorial TIFFs are uncompressed and compatible.
 
