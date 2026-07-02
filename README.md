@@ -99,6 +99,14 @@ python3 -m jupyterlab
 
 This will start the jupyter server and open a tab in your internet browser that will allow you to interact with the notebooks.
 
+## Run in your browser
+
+Alternatively, the tutorial notebooks can be run directly in your browser with JupyterLite, without installing Python locally:
+
+https://uhlmanngroup.github.io/imagequantification101/
+
+This excludes the need to install Python and all dependencies, but it is limited in terms of performance and functionality. For example, you cannot use napari in JupyterLite, therefore the napari notebook is not available in this version.
+
 ## To cite
 If you use the exercise notebooks from this tutorial, please acknowledge it as follows:
 
