@@ -76,6 +76,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.jupyterlite.doit.db
 
 # IPython
 profile_default/

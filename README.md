@@ -99,6 +99,21 @@ python3 -m jupyterlab
 
 This will start the jupyter server and open a tab in your internet browser that will allow you to interact with the notebooks.
 
+## Run in your browser
+
+Alternatively, the tutorial notebooks can be run directly in your browser without setting up a local Python environment. Click the badge below to launch the tutorial directly in your browser via [JupyterLite](https://jupyterlite.readthedocs.io/en/latest/).
+
+[![Launch JupyterLite](https://img.shields.io/badge/launch-JupyterLite-F37626?logo=jupyter&logoColor=white)](https://uhlmanngroup.github.io/imagequantification101/)
+
+<details>
+<summary>Info about the JupyterLite environment</summary>
+
+In this setup, no data is uploaded to the cloud and code is executed in your browser directly. If you modify the notebooks, the modifications will be saved in your browser's local storage. You can download them and also upload new notebooks or data to the environment. To work with a fresh copy, use private/incognito mode or clear the local browser storage.
+
+This is a very convenient way to immediately get started with the notebooks. However, please note that JupyterLite is a limited environment and does not support all features of a full Python installation. For example, you cannot use napari in JupyterLite, therefore the napari notebook is not available in this version. JupyterLite also cannot read TIFF files that require `imagecodecs`, such as compressed TIFFs; the provided tutorial TIFFs are uncompressed and compatible.
+
+</details>
+
 ## To cite
 If you use the exercise notebooks from this tutorial, please acknowledge it as follows:
 

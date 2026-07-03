@@ -1,0 +1,66 @@
+name: Deploy JupyterLite
+
+on:
+  push:
+    branches:
+      - zidas-2026
+  pull_request:
+    branches:
+      - zidas-2026
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-jupyterlite.txt
+
+      - name: Setup micromamba
+        uses: mamba-org/setup-micromamba@v3
+        with:
+          init-shell: none
+          cache-downloads: true
+          cache-downloads-key: jupyterlite-xeus-${{ hashFiles('jupyterlite-environment.yml') }}
+
+      - name: Install JupyterLite
+        run: python -m pip install -r requirements-jupyterlite.txt
+
+      - name: Build JupyterLite
+        run: jupyter lite build
+
+      - name: Disable Jekyll
+        run: touch dist/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
