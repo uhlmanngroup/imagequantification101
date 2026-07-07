@@ -25,11 +25,16 @@ Upon closing and reopening the Powershell terminal, you should be able to type `
 
 #### Using pixi
 
-Pixi is folder based, meaning that you will install packages in a given folder. For the course, we want to use the course repository. So download this repository (green button at the top left), unzip it (on Windows, ensure that you actually extract the files) and then move to that folder within your terminal using the `cd` command. If you are not sure of the exact path to the folder, you can drag and drop the folder into the terminal window and it will fill in the path for you.
+Pixi is folder based, meaning that you will install packages in a given folder. For the course, we want to use the course repository. So download this repository (green button at the top left) and unzip it (on Windows, ensure that you actually extract the files).
+
+![download_zip](./git-download-zip.png)
+
+Then, in your terminal, move to that folder using the `cd` command. If you are not sure of the exact path to the folder, you can drag and drop the folder into the terminal window and it will fill in the path for you.
 
 ```
 cd path/to/imagequantification101-zidas-2026
 ```
+
 We provide a `pixi.toml` and a `pixi.lock` file in the repository. These files contain the information about the packages that we need for the course. To install them, just type the following command and hit enter:
 ```
 pixi install --frozen
