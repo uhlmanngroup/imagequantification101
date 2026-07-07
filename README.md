@@ -11,7 +11,6 @@ Pixi is a new package manager for Python that is easy to install and use. To ins
 For MacOS users, just look for the Terminal application in the `Applications/Utilities` folder. For Linux users, open your preferred terminal application. Then just type the following command and hit enter:
 ```
 curl -fsSL https://pixi.sh/install.sh | sh
-
 ```
 Upon closing and reopening the terminal, you should be able to type `pixi` and see some output about pixi usage.
 
@@ -58,10 +57,11 @@ For example to install napari and jupyterlab in your own environment, you can ru
 ```
 pixi add napari pyqt6 jupyterlab
 ```
+
 The tools will become available in that folder AND the packages will be automatically listed in the `pixi.toml` file allowing you to recreate the environment later on another machine. You can also share the `pixi.toml` file with others to allow them to recreate your environment.
-```
 
 ### Install miniforge
+
 Miniforge is our recommended conda environment manager. Please download the version which fits your operating system from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#download) and follow the respective install instructions:
 * [Windows](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows)
 * [MacOS with Homebrew](https://github.com/conda-forge/miniforge?tab=readme-ov-file#homebrew)
