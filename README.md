@@ -45,7 +45,7 @@ Now you can launch tools that were installed by pixi. The two that we will need 
 pixi run napari
 ```
 ```
-pixi run jupyterlab
+pixi run jupyter lab
 ```
 You can run multiple tools at the same time in different terminal windows. Just remember to always first move to the folder containing your environment!
 
