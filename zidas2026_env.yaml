@@ -8,11 +8,11 @@ dependencies:
   - scikit-image
   - seaborn
   - numpy
-  - napari>=0.5.4
-  - pyqt
+  - napari>=0.7.0
+  - pyqt6
   - jupyterlab
   - scikit-learn
+  - napari-skimage
   - pip
   - pip:
-      - napari-skimage
       - pyefd
